@@ -1,0 +1,126 @@
+/* New story page styles */
+.new-story-header {
+  background-color:rgb(236, 216, 244);
+  padding: 64px 0 48px;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+
+
+.new-story-form-container {
+  margin-top: -24px;
+  margin-bottom: 64px;
+}
+
+.new-story-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.form-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.new-form__camera__container {
+  display: none;
+  margin-top: 16px;
+}
+
+.new-form__camera__container.open {
+  display: block;
+}
+
+.new-form__camera__video {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.new-form__camera__canvas {
+  display: none;
+}
+
+.new-form__camera__tools {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.new-form__photo__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.new-form__photo__preview {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.new-form__photo__preview img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.new-form__location__map__container {
+  height: 300px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.new-form__location__help {
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--text-muted);
+}
+
+.new-form__location__lat-lng {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.new-form__location__lat-lng .input-group {
+  flex: 1;
+}
+
+.new-story-form-buttons {
+  margin-top: 32px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .new-form__photo__buttons {
+    flex-direction: row;
+  }
+
+  .new-form__location__lat-lng {
+    flex-direction: row;
+  }
+}

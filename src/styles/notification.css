@@ -1,0 +1,86 @@
+/* Styles for notification button */
+.notification-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  color :#8e6fc5;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.notification-button:hover {
+  color:white;
+  background-color: #8e6fc5;
+}
+
+.notification-button .fa-bell-slash {
+  color: #e74c3c;
+}
+
+.notification-button .fa-bell {
+  color: #5d5171;
+}
+
+/* Animation for notification bell */
+@keyframes bell-ring {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(6deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  90% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.notification-button:hover .fa-bell {
+  animation: bell-ring 1s ease;
+}
+
+/* Notification badge */
+.notification-badge {
+  position: relative;
+}
+
+.notification-badge::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+}

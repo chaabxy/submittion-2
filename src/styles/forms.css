@@ -1,0 +1,62 @@
+/* Form styles */
+form > .form-control:not([hidden]) ~ .form-control:not([hidden]) {
+  margin-block-start: 24px;
+}
+
+form .form-control > :not([hidden]) ~ :not([hidden]) {
+  margin-block-start: 8px;
+}
+
+.form-label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.form-help {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.input-group input {
+  padding-left: 48px;
+}
+
+form .form-buttons {
+  margin-block-start: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Auth forms */
+.auth-form-buttons {
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.auth-submit-btn {
+  width: 100%;
+}
+
+.auth-alternate-action {
+  text-align: center;
+  color: var(--text-muted);
+}
